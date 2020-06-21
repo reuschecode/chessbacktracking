@@ -66,7 +66,6 @@ void loadPosition()
        f[k].setPosition(size*j,size*i);
        k++;
      }
-
     for(int i=0;i<position.length();i+=5)
       move(position.substr(i,4));
 }
