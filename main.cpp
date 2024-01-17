@@ -156,7 +156,12 @@ int main()
           }
 
         move(str);  position+=str+" ";
-        f[n].setPosition(newPos); 
+        f[n].setPosition(newPos);
+
+            if (str == "e1g1") {
+        // Movimiento especial: Enroque corto para las blancas
+            std::cout << "¡Enroque corto para las blancas! Anatoli Kárpov aprobaría este elegante movimiento. 👑\n";
+        }
         }
 
         if (isMove) f[n].setPosition(pos.x-dx,pos.y-dy);
